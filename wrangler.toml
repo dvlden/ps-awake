@@ -1,0 +1,13 @@
+name = "ps-awake"
+main = "src/index.ts"
+compatibility_date = "2022-12-06"
+
+kv_namespaces = [
+  { binding = "IFY", id = "2257f581f3d8404e97d43a15cdeb18e5", preview_id = "4928ed2be5334f80a787f279f607434f" }
+]
+
+[triggers]
+crons = [ "1 * * * *" ]
+
+[env.dev.triggers]
+crons = [ "0 * * * *" ]
