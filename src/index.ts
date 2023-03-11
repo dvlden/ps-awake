@@ -5,11 +5,7 @@ export interface Env {
 }
 
 export default {
-  async scheduled(
-    _: ScheduledController,
-    env: Env,
-    ctx: ExecutionContext,
-  ): Promise<void> {
+  async scheduled(_: ScheduledController, env: Env, ctx: ExecutionContext) {
     const endpoint = await env.IFY.get('endpoint')
     const token = await env.IFY.get('token')
 
