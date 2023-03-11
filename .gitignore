@@ -10,3 +10,4 @@ node_modules/
 
 # wrangler project
 .dev.vars
+dist/
