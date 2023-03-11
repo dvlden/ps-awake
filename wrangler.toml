@@ -7,7 +7,7 @@ kv_namespaces = [
 ]
 
 [triggers]
-crons = [ "0 0 15,30 * *" ]
+crons = [ "0 0 */7 * *" ]
 
 [env.dev.triggers]
 crons = [ "0 * * * *" ]
