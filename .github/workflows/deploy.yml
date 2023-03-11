@@ -16,7 +16,7 @@ jobs:
           node-version: 18
       - uses: pnpm/action-setup@v2.2.4
       - run: pnpm i
-      - run: wrangler publish
-        env: 
+      - run: pnpm run deploy
+        env:
           CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
